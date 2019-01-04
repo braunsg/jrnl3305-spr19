@@ -10,5 +10,7 @@ Note that these materials will also be uploaded to Blackboard; it is expected th
 # About the Instructor
 
 Instructor: Steven Braun
+
 Office: Snell Library 243
+
 Email: s.braun@northeastern.edu
