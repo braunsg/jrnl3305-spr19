@@ -1,0 +1,256 @@
+.axis {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+
+.axisLabel {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Playfair+Display:400,400i,700');
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#wrapper {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#navigation {
+  z-index: 200;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #38547f;
+  margin: 0px;
+  padding: 5px 0px 5px 0px;
+  background-color: #FFFFFF;
+}
+
+#navigation-content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#the-scope {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 14pt;
+  color: #e7972d;
+  flex: 0 1 50%;
+}
+
+#the-scope a:link,
+#the-scope a:visited {
+  text-decoration: none;
+  color: #e7972d;
+}
+
+.nav-item {
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-size: 10pt;
+  color: #38547f;
+  width: 150px;
+  flex: 0 1 auto;
+  text-align: right;
+}
+
+#head-wrapper {
+  z-index: inherit;
+  width: 80%;
+  min-height: 100%;
+  margin: 150px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  cursor: default;
+}
+
+
+#head-wrapper > #left {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+}
+
+#head-wrapper > #right {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+}
+
+#mh100-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#mh100::before {
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  font-family: "Open Sans";
+  font-size: 190pt;
+  font-weight: 400;
+  line-height:52pt;
+  color: #e7972d4a;
+  content: "#";
+}
+
+#mh100 {
+  position: relative;
+  font-family: "Playfair Display";
+  font-size: 52pt;
+  font-weight: 700;
+  line-height:52pt;
+  /* width: min-content; */
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+#mh100 > #m {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  flex: 0 1;
+  color: #304975;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+#mh100 > #h {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  flex: 0 1;
+  color: #304975;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+#mh100 > #gold100 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  flex: 0 1;
+  color: #e7972d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#subtitle {
+  margin: 30px 0px 0px 0px;
+  width: 300px;
+  font-family: "Open Sans";
+  font-size: 16pt;
+  font-weight: 400;
+  line-height:22pt;
+  color: #304975;
+}
+
+.section-header {
+  width: 100%;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-size: 16pt;
+  color: #38547f;
+  font-weight: 700;
+  margin: 0px 0px 15px 0px;
+}
+
+#content {
+  z-index: 100;
+  width: 80%;
+  min-height: 100vh;
+  margin: 150px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+.content-row {
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+.content-row-left {
+  width: 40%;
+  float: left;
+  margin: 20px 0px 20px 0px;
+  font-family: "Open Sans";
+  font-size: 14pt;
+  color: #38547f;
+  margin-top: 10px;
+  /* background-color: rgba(255,255,255,0.8); */
+  padding: 12px;
+  padding-left: 0px;
+  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.content-row-right {
+  width: 60%;
+  float: left;
+  margin: 20px 0px 20px 0px;
+  font-family: "Open Sans";
+  font-size: 14pt;
+  color: #38547f;
+  margin-top: 10px;
+  /* background-color: rgba(255,255,255,0.8); */
+  padding: 12px;
+  padding-left: 0px;
+  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#map {
+  height: 500px;
+}
+
+/* RESPONSIVE DESIGN */
+
+#photo {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-row-left {
+    width: 100%;
+  }
+
+  .content-row-right {
+    width: 100%;
+  }
+
+}

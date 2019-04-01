@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#MissionHill100</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lib/leaflet.css">
+  <script src="lib/d3.v5.js"></script>
+  <script src="lib/noframework.waypoints.js"></script>
+  <script src="lib/leaflet-src.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="navigation">
+      <div id="navigation-content">
+        <div id="the-scope"><a target="_blank" href="https://www.northeastern.edu/thescope/">The Scope</a></div>
+      </div>
+    </div>
+    <div id="head-wrapper">
+      <div id="left">
+        <div id="mh100-container">
+          <div id="mh100">
+            <div id="m">Mission</div>
+            <div id="h">Hill</div>
+            <div id="gold100">100</div>
+          </div>
+          <div id="subtitle">Neighborhood stories of justice, hope, and resilience in Boston's Mission Hill community</div>
+        </div>
+      </div>
+      <div id="right">
+      </div>
+    </div> <!-- #head-wrapper -->
+    <div id="content">
+      <div class="section-header">A Community Tapestry</div>
+      <div class="content-row">
+        <div class="content-row-left">
+          <p>Mission Hill is a community marked by diversity &mdash; in ethnicity, age, vocation, and more. Although politically and geographically bounded in concrete terms, demographically it is a community that resists those conventional boundaries. To understand Mission Hill is not to conceptualize it by its cartographic borders but rather to imagine it as a kaleidoscopic tapestry of people and places spread out across complex layers of demographic space and generational time.</p>
+        </div>
+        <div class="content-row-right">
+          <img src="images/mh-tapestry.png" id="photo">
+
+        </div>
+      </div>
+      <div class="section-header">Geography</div>
+      <div class="content-row">
+        <div class="content-row-left">
+          <p>The people profiled in Mission Hill 100 come from many different parts of the Mission Hill community. This map shows the locations of interviews, illustrating that the perceptual boundaries of what constitutes Mission Hill can extend beyond geographic and political ones.
+          </p>
+        </div>
+        <div class="content-row-right" id="map"></div>
+      </div>
+      <div class="section-header" id="trigger1">Generations of Residents</div>
+      <div class="content-row">
+        <div class="content-row-left">
+          <p>The Mission Hill community is composed of individuals of many ages, from people in their teens to those in their eighties. These residents have called Mission Hill their home for various durations &mdash; some for just a few years, and others for a lifetime.
+          </p>
+          <p>Half of those profiled in Mission Hill 100 have lived in Mission Hill for more than a decade.</p>
+        </div>
+        <div class="content-row-right" id="chart1"></div>
+      </div>
+      <div class="section-header" id="trigger2">Affordability</div>
+      <div class="content-row">
+        <div class="content-row-left">
+          <p>Like much of the greater Boston area, living in Mission Hill is expensive. As the cost of living and rent prices continue to climb upwards, many residents are increasingly pushed out of the place they have called home for many years. This graph shows median rent prices for homes in Mission Hill. Even a 1-bedroom apartment costs nearly $2000 each month.</p>
+        </div>
+        <div class="content-row-right" id="chart2"></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/map-mh.js"></script>
+  <script src="js/scatterplot-mh.js"></script>
+  <script src="js/barchart-mh.js"></script>
+  <script src="js/waypoints.js"></script>
+</body>
+</html>
